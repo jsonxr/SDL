@@ -1,9 +1,9 @@
 .{
     .name = "SDL",
-    .minimum_zig_version = "0.12.0",
-    .version = "2.26.3-6",
+    .minimum_zig_version = "0.13.0",
+    .version = "0.13.0-3.1.6-preview",
     .dependencies = .{
-        .sdl = .{
+        .sdl3 = .{
             .url = "https://github.com/libsdl-org/SDL/archive/refs/tags/preview-3.1.6.zip",
             .hash = "122099f4cc54e09ca76cb1b5c9d32f6809dab17c53c0d81dbc07fb3bf52c2ac8a793",
         },

@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
     const t = target.result;
 
-    const sdl_c = b.dependency("sdl", .{});
+    const sdl_c = b.dependency("sdl3", .{});
 
     const lib = b.addStaticLibrary(.{
         .name = "SDL3",
@@ -74,7 +74,7 @@ pub fn build(b: *std.Build) void {
         },
     }
 
-    lib.installHeadersDirectory(sdl_c.path("include"), "SDL3", .{});
+    lib.installHeadersDirectory(sdl_c.path("include"), "", .{});
     b.installArtifact(lib);
 }
 

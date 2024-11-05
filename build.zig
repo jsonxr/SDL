@@ -118,6 +118,7 @@ const generic_src_files = [_][]const u8{
 
     // dynapi
     "dynapi/SDL_dynapi.c",
+    "dynapi/SDL_dynapi_overrides.h",
 
     // events
     "events/SDL_categories.c",

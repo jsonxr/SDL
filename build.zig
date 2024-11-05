@@ -63,6 +63,7 @@ pub fn build(b: *std.Build) void {
             lib.linkFramework("AudioToolbox");
             lib.linkFramework("AVFoundation");
             lib.linkFramework("Foundation");
+            lib.linkFramework("CoreMedia");
         },
         else => {
             const config_header = b.addConfigHeader(.{

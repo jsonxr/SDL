@@ -141,6 +141,7 @@ const generic_src_files = [_][]const u8{
 
     // filesystem
     "filesystem/SDL_filesystem.c",
+    "filesystem/posix/SDL_sysfsops.c",
 
     // gpu
     "gpu/SDL_gpu.c",
@@ -198,6 +199,7 @@ const generic_src_files = [_][]const u8{
 
     // process
     "process/SDL_process.c",
+    "process/posix/SDL_posixprocess.c",
 
     // render
     "render/SDL_d3dmath.c",
@@ -227,6 +229,8 @@ const generic_src_files = [_][]const u8{
 
     // storage
     "storage/SDL_storage.c",
+    "storage/generic/SDL_genericstorage.c",
+    //"storage/steam/SDL_steamstorage.c",
 
     // test
 
@@ -276,23 +280,25 @@ const generic_src_files = [_][]const u8{
     "render/software/SDL_rotate.c",
     "render/software/SDL_triangle.c",
     "audio/dummy/SDL_dummyaudio.c",
-    "joystick/hidapi/SDL_hidapi_combined.c",
-    "joystick/hidapi/SDL_hidapi_gamecube.c",
-    "joystick/hidapi/SDL_hidapi_luna.c",
-    "joystick/hidapi/SDL_hidapi_ps3.c",
-    "joystick/hidapi/SDL_hidapi_ps4.c",
-    "joystick/hidapi/SDL_hidapi_ps5.c",
-    "joystick/hidapi/SDL_hidapi_rumble.c",
-    "joystick/hidapi/SDL_hidapi_shield.c",
-    "joystick/hidapi/SDL_hidapi_stadia.c",
-    "joystick/hidapi/SDL_hidapi_steam.c",
-    "joystick/hidapi/SDL_hidapi_steam_hori.c",
-    "joystick/hidapi/SDL_hidapi_steamdeck.c",
-    "joystick/hidapi/SDL_hidapi_switch.c",
-    "joystick/hidapi/SDL_hidapi_wii.c",
-    "joystick/hidapi/SDL_hidapi_xbox360.c",
-    "joystick/hidapi/SDL_hidapi_xbox360w.c",
-    "joystick/hidapi/SDL_hidapi_xboxone.c",
+
+    // "joystick/hidapi/SDL_hidapi_combined.c",
+    // "joystick/hidapi/SDL_hidapi_gamecube.c",
+    // "joystick/hidapi/SDL_hidapi_luna.c",
+    // "joystick/hidapi/SDL_hidapi_ps3.c",
+    // "joystick/hidapi/SDL_hidapi_ps4.c",
+    // "joystick/hidapi/SDL_hidapi_ps5.c",
+    // "joystick/hidapi/SDL_hidapi_rumble.c",
+    // "joystick/hidapi/SDL_hidapi_shield.c",
+    // "joystick/hidapi/SDL_hidapi_stadia.c",
+    // "joystick/hidapi/SDL_hidapi_steam.c",
+    // "joystick/hidapi/SDL_hidapi_steam_hori.c",
+    // "joystick/hidapi/SDL_hidapi_steamdeck.c",
+    // "joystick/hidapi/SDL_hidapi_switch.c",
+    // "joystick/hidapi/SDL_hidapi_wii.c",
+    // "joystick/hidapi/SDL_hidapi_xbox360.c",
+    // "joystick/hidapi/SDL_hidapi_xbox360w.c",
+    // "joystick/hidapi/SDL_hidapi_xboxone.c",
+    "joystick/hidapi/SDL_hidapijoystick.c",
 };
 
 const windows_src_files = [_][]const u8{
